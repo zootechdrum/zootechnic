@@ -30,16 +30,44 @@
                     <use xlink:href="<?php echo get_template_directory_uri() ?>/sprite.svg#icon-instagram"></use>
                 </svg>
             </div>
+            <div class="user-nav__icon-box">
+                <svg class="user-nav__icon">
+                    <use xlink:href="<?php echo get_template_directory_uri() ?>/sprite.svg#icon-linkedin"></use>
+                </svg>
+            </div>
         </nav>
     </header>
 
     <div class="content">
             <nav class="sidebar">
-                Hello this is the navbar
+                <ul class="side-nav">
+                    <li class="side-nav__item">
+                        <a href="" class="side-nav__link">BLOG</a>    
+                    </li>
+
+                    <li class="side-nav__item">
+                        <a href="" class="side-nav__link">ABOUT ME</a>    
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="" class="side-nav__link">CONTACT ME</a>    
+                    </li>
+
+                </ul>
+                <div class="legal">
+                    &copy; 2019 by Cesar Gomez. All rights reseved.    
+                </div>
             </nav>
 
         <main class="hotel-view">
-            Hotel_view
+            <h2>zooTechnics</h2>
+            <?php 
+                while(have_posts()) {
+                    the_post(); ?>
+                <h2><?php the_title(); ?></h2>
+                <?php the_content(); ?>
+                <hr>
+                <?php    }
+            ?>
         </main>
     </div>
 </div>

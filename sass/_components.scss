@@ -1,0 +1,151 @@
+///////Logo
+.logo {
+    height: 9.0rem;
+    margin-left:3rem;
+}
+
+////////SEARCH
+.search {
+    flex: 0 0 30%; 
+    display: flex;
+    align-items:center;
+    justify-content: center; 
+
+    &__input {
+        font-family: inherit;
+        font-size: inherit;
+        color:inherit;
+        background-color: var(--color-Grey-light-2);
+        border:none; 
+        padding: .7rem 2rem;
+        border-radius:100px;
+        width:60%;
+        transition: all .2s;
+        margin-right:-3.5rem;
+
+        &:focus {
+            outline:none;
+            width:100%;
+            background-color:var(--color-Grey-light-2);
+        }
+
+        &::-webkit-input-placeholder {
+            font-weight:100;
+            color:var(--color-Grey-light-4);
+        }
+
+        &__input:focus + &__button {
+            background-color:var(--color-Grey-light-2);
+        }
+    }
+
+    &__button {
+        border:none;
+        background-color: var(--color-Grey-light-2);
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            transform: translateY(2px);
+        }
+    }
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        fill: #eb2f64;
+    }
+}
+
+///////USER NAVIGATION
+.user-nav {
+    align-self: stretch;
+    display:flex;
+    align-items: center;
+
+    & > * {
+        padding: 0 2rem;
+        cursor:pointer;
+        height: 100%;
+        align-items:center;
+    }
+
+    & > *:hover {
+        background-color: var(--color-Grey-light-2);
+    }
+
+    &__icon-box {
+        display:flex;
+        
+    }
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+
+    }
+
+}
+
+.side-nav {
+    list-style: none;
+    margin-top: 3.5rem;
+    font-size:1.4rem;
+    
+    &__item{
+        transition:all .3s;
+    }
+
+    &__item:hover{
+        border-left:solid 5px;
+        border-color:var(--color-primary);
+ 
+    }
+
+    &__item:active{
+        background-color:var(--color-primary-light)
+    }
+
+    &__link,
+    &__link:visited {
+        color: var(--color-Grey-light-2);
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        padding:1.5rem 3rem;
+    }
+}
+
+///////side navigation
+.sidebar {
+    height: 50rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__item {
+
+    }
+
+    &__link {
+
+    }
+
+
+}
+
+///Legal Text 
+
+.legal {
+    font-size:1.2rem;
+    text-align: center;
+    padding : 2.5rem;
+    color:var(--color-Grey-light-4);
+}
+
+/////hotel-view 
+.hotel-view {
+    flex:1;
+
+}
