@@ -50,11 +50,11 @@
                 <nav class="sidebar">
                     <ul class="side-nav">
                         <li class="side-nav__item">
-                            <a href="" class="side-nav__link">BLOG</a>    
+                            <a href="http://zootechnic.local" class="side-nav__link">BLOG</a>    
                         </li>
 
                         <li class="side-nav__item">
-                            <a href="http://zootechnic.local/about-me/" class="side-nav__link">ABOUT ME</a>    
+                            <a class="side-nav__link" href="<?php echo site_url('/about-me') ?>">ABOUT ME</a>    
                         </li>
                         <li class="side-nav__item">
                             <a href="" class="side-nav__link">CONTACT ME</a>    
@@ -66,16 +66,24 @@
                     </div>
                 </nav>
 
-            <main class="hotel-view">
-                <h2>zooTechnics</h2>
-                <?php 
-                    while(have_posts()) {
-                        the_post(); ?>
-                    <h2><?php the_title(); ?></h2>
-                    <?php the_content(); ?>
-                    <hr>
-                    <?php    }
-                ?>
+            <main class="hotel-view"
+                <div class="detail">
+                    <div class="description">
+                        <?php 
+                            while(have_posts()) {
+                            the_post(); ?> 
+                            <div class="description__post">
+                                <h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
+                                <div class="description__p">
+                                    <?php the_excerpt(); ?>
+                                    <p class="btn btn-link">Continue reading &raquo;</p>  
+                                </div>
+                            </div>                                                
+                        <?php }
+                        ?>
+                        get_footer();
+                    </div>
+                </div>
             </main>
         </div>
     </div>

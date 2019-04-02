@@ -1,6 +1,6 @@
 ///////Logo
 .logo {
-    height: 9.0rem;
+    height: 10.0rem;
     margin-left:3rem;
 }
 
@@ -120,7 +120,7 @@
 
 ///////side navigation
 .sidebar {
-    height: 50rem;
+    // height: 50rem;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -144,8 +144,25 @@
     color:var(--color-Grey-light-4);
 }
 
+.gallery {
+
+    &__photo {
+        height:40em;
+        display:block;
+        width:100%;
+    }
+}
+
 /////hotel-view 
 .hotel-view {
     flex:1;
 
+}
+
+////description
+
+.description {
+    &__post {
+        margin-top:3rem;
+    }
 }
