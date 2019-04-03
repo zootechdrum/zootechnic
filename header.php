@@ -80,11 +80,10 @@
                                 </div>
                             </div>                                                
                         <?php }
+                             get_footer();
                         ?>
-                        get_footer();
                     </div>
                 </div>
             </main>
         </div>
     </div>
-

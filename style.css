@@ -42,7 +42,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+  background-image: linear-gradient(#e66465, #9198e5);
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--color-Grey-dark-2);
@@ -53,7 +53,8 @@ body {
   margin: 8rem auto;
   background-color: var(--color-Grey-light-2);
   box-shadow: var(--shadow-dark);
-  min-height: 50rem; }
+  min-height: 40rem;
+  border-radius: 10px 10px 0 0; }
 
 .header {
   height: 10rem;
@@ -62,7 +63,8 @@ body {
   font-size: 1.4rem;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  border-radius: 10px 10px 0 0; }
 
 .content {
   display: flex; }
@@ -189,3 +191,11 @@ body {
 
 .description__post {
   margin-top: 3rem; }
+
+.btn {
+  margin-right: 2%;
+  color: #2980b9;
+  width: 20%;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center; }
